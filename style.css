@@ -85,7 +85,7 @@ body {
 }
 
 .features {
-  padding: 80px 20px;
+  padding: 60px 20px;
   text-align: center;
   animation: fadeUp 2s ease-in-out;
 }
@@ -93,7 +93,53 @@ body {
 .section-title {
   font-size: 2rem;
   color: gold;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+}
+
+.package-card {
+  background: #111;
+  padding: 30px;
+  margin: 20px auto;
+  width: 300px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px #222;
+  color: #f2f2f2;
+  transition: 0.3s;
+}
+.package-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px gold;
+}
+.package-card h2 {
+  color: gold;
+  margin-bottom: 10px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  margin-bottom: 10px;
+}
+
+.chart-box {
+  background: #111;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 700px;
+  border-radius: 14px;
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.2);
+  transition: 0.3s;
+}
+.chart-box h3 {
+  color: gold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.chart-box:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 30px gold;
 }
 
 footer {
