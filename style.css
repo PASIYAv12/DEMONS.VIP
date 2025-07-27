@@ -160,3 +160,50 @@ footer {
   from { opacity: 0; transform: translateY(40px); }
   to { opacity: 1; transform: translateY(0); }
 }
+
+
+
+
+
+
+
+.features h2,
+.package-card h3,
+.package-card p {
+  color: #fff;
+  text-shadow: 0 0 5px gold;
+}
+
+
+
+.package-card {
+  background: #111;
+  padding: 25px;
+  border: 1px solid gold;
+  border-radius: 12px;
+  color: white;
+  width: 280px;
+  margin: 20px;
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.2);
+  transition: 0.3s ease;
+}
+
+.package-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px gold;
+}
+
+.package-card h3 {
+  font-size: 1.5rem;
+  color: gold;
+}
+
+.package-card p {
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+.package-card .btn-glow {
+  margin-top: 15px;
+}
+
