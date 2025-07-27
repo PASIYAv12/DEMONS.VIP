@@ -2,225 +2,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Developer Details</title>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Developer Info</title>
   <style>
     body {
-  margin: 0;
-      font-family: 'Orbitron', sans-serif;
-      background: linear-gradient(135deg, #001f3f, #0074D9);
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #000000, #1a1a1a);
       color: #fff;
-      animation: backgroundShift 10s infinite alternate;
+      animation: bgShift 10s infinite alternate;
     }
 
-    @keyframes backgroundShift {
-      0% { background: #001f3f; }
-      25% { background: #0074D9; }
-      50% { background: #39CCCC; }
-      75% { background: #3D9970; }
-      100% { background: #001f3f; }
+    @keyframes bgShift {
+      0% { background: #000000; }
+      25% { background: #1a1a1a; }
+      50% { background: #111111; }
+      75% { background: #000000; }
+      100% { background: #1a1a1a; }
     }
 
     .container {
       max-width: 600px;
-      margin: 80px auto;
-      background-color: rgba(0, 0, 0, 0.6);
+      margin: 60px auto;
+      background-color: rgba(255, 255, 255, 0.05);
       padding: 30px;
-      border-radius: 12px;
+      border-radius: 15px;
       text-align: center;
-      box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+      box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
     }
 
     h1 {
-      color: cyan;
-      font-size: 28px;
-      margin-bottom: 10px;
+      color: #00ffff;
+      font-size: 32px;
     }
 
     h2 {
-      color: #00ff99;
-      margin-top: 0;
+      color: #ff00ff;
+      margin: 5px 0 20px;
     }
 
-    p {
-      font-size: 16px;
-      margin: 10px 0;
-    }
-
-    .contact {
-      color: yellow;
-      margin-top: 20px;  
-    }
-
-    a {
-      color: #00d9ff;
+    .contact-btn {
+      display: inline-block;
+      margin: 10px;
+      padding: 10px 25px;
+      background-color: #00ccff;
+      color: #000;
+      border: none;
+      border-radius: 30px;
       text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s ease;
     }
 
-    a:hover {
-      text-decoration:
+    .contact-btn:hover {
+      background-color: #00ffcc;
+      color: #000;
+    }
+
+    .skills {
+      margin-top: 25px;
+      text-align: left;
+    }
+
+    .skills ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .skills li::before {
+      content: '💻 ';
+    }
+
+    .gmail {
+      margin-top: 15px;
+      color: #00d9ff;
+      word-break: break-all;
     }
   </style>
 </head>
 <body>
-
   <div class="container">
-    <h1>Developer Details</h1>
-    <h2>Pasidu Sampath</h2>
-    <p>PASIYA-MD TEAM OWNER</p>
-    <p>Fullstack Developer</p>
-    <p>Software & Cyber Security Engineer</p>
+    <h1>Pasidu Sampath</h1>
+    <h2>PASIYA-MD TEAM OWNER</h2>
 
-    <p class="contact">📞 Contact</p>
-    <p>Email: <a href="mailto:pasidusampath808@gmail.com">pasidusampath808@gmail.com</a></p>
-    <p>WhatsApp:
-      <a href="https://wa.me/94784548818" target="_blank">+94784548818</a> /
-      <a href="https://wa.me/94766359869" target="_blank">+94766359869</a>
-    </p>
-    <p>Website: <a href="https://pasiya-md-web.vercel.app" target="_blank">pasiya-md-web.vercel.app</a></p>
+    <a class="contact-btn" href="https://wa.me/94784548818" target="_blank">WhatsApp: 0784548818</a>
+    <a class="contact-btn" href="https://wa.me/94766359869" target="_blank">WhatsApp: 0766359869</a>
+
+    <div class="gmail">📧 Email: pasidusampath730@gmail.com</div>
+
+    <div class="skills">
+      <h3>🔧 My Skills:</h3>
+      <ul>
+        <li>Full-stack Developer</li>
+        <li>Software Engineering</li>
+        <li>Cyber Security Engineer</li>
+        <li>UI/UX Web Designing</li>
+        <li>WhatsApp Bot Development</li>
+      </ul>
+    </div>
   </div>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Gradient Text + Glow Button</title>
-<style>
-  body {
-    background-color: #0b0f17;
-    font-family: Arial, sans-serif;
-    color: white;
-    text-align: center;
-    padding: 80px 20px;
-  }
-  h1 {
-    font-weight: bold;
-    font-size: 3em;
-    background: linear-gradient(90deg, #d4145a, #00e5ff);
-    background-size: 200% 200%;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: colorShift 4s ease infinite alternate;
-    margin-bottom: 20px;
-  }
-  @keyframes colorShift {
-    0% { background-position: 0% 50%; }
-    100% { background-position: 100% 50%; }
-  }
-  p {
-    font-size: 1.2em;
-    margin-bottom: 40px;
-    color: #ccc;
-  }
-  button {
-    background-color: #00d66d;
-    color: white;
-    border: none;
-    padding: 15px 40px;
-    font-size: 1.2em;
-    border-radius: 8px;
-    cursor: pointer;
-    box-shadow: 0 0 20px #00d66d88;
-    transition: box-shadow 0.3s ease;
-  }
-  button:hover {
-    box-shadow: 0 0 40px #00ff88cc;
-  }
-</style>
-</head>
-<body>
-  <h1>Welcome to <span>PASIYA-MD</span></h1>
-  <p>Your Smart WhatsApp Bot Assistant</p>
-  <button>Start on WhatsApp</button>
-</body>
-</html>
-
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Rainbow Glow Box</title>
-<style>
-  .container {
-    width: 400px;
-    margin: 50px auto;
-    padding: 30px;
-    background: #164b4b;
-    border-radius: 15px;
-    color: white;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-align: center;
-    animation: rainbowGlow 5s linear infinite;
-  }
-
-  @keyframes rainbowGlow {
-    0% {
-      box-shadow:
-        0 0 10px red,
-        0 0 20px orange,
-        0 0 30px yellow,
-        0 0 40px green,
-        0 0 50px blue,
-        0 0 60px indigo,
-        0 0 70px violet;
-    }
-    25% {
-      box-shadow:
-        0 0 10px orange,
-        0 0 20px yellow,
-        0 0 30px green,
-        0 0 40px blue,
-        0 0 50px indigo,
-        0 0 60px violet,
-        0 0 70px red;
-    }
-    50% {
-      box-shadow:
-        0 0 10px yellow,
-        0 0 20px green,
-        0 0 30px blue,
-        0 0 40px indigo,
-        0 0 50px violet,
-        0 0 60px red,
-        0 0 70px orange;
-    }
-    75% {
-      box-shadow:
-        0 0 10px green,
-        0 0 20px blue,
-        0 0 30px indigo,
-        0 0 40px violet,
-        0 0 50px red,
-        0 0 60px orange,
-        0 0 70px yellow;
-    }
-    100% {
-      box-shadow:
-        0 0 10px red,
-        0 0 20px orange,
-        0 0 30px yellow,
-        0 0 40px green,
-        0 0 50px blue,
-        0 0 60px indigo,
-        0 0 70px violet;
-    }
-  }
-</style>
-</head>
-<body>
-
-<div class="container">
-  <h2>Developer Details</h2>
-  <p><strong>Pasidu Sampath</strong></p>
-  <p>PASIYA-MD TEAM OWNER</p>
-  <p>Fullstack Developer</p>
-  <p>Software & Cyber Security Engineer</p>
-</div>
-
 </body>
 </html>
