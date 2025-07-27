@@ -83,3 +83,58 @@
 
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Gradient Text + Glow Button</title>
+<style>
+  body {
+    background-color: #0b0f17;
+    font-family: Arial, sans-serif;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+  }
+  h1 {
+    font-weight: bold;
+    font-size: 3em;
+    background: linear-gradient(90deg, #d4145a, #00e5ff);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: colorShift 4s ease infinite alternate;
+    margin-bottom: 20px;
+  }
+  @keyframes colorShift {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+  }
+  p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+    color: #ccc;
+  }
+  button {
+    background-color: #00d66d;
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    font-size: 1.2em;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 0 20px #00d66d88;
+    transition: box-shadow 0.3s ease;
+  }
+  button:hover {
+    box-shadow: 0 0 40px #00ff88cc;
+  }
+</style>
+</head>
+<body>
+  <h1>Welcome to <span>PASIYA-MD</span></h1>
+  <p>Your Smart WhatsApp Bot Assistant</p>
+  <button>Start on WhatsApp</button>
+</body>
+</html>
