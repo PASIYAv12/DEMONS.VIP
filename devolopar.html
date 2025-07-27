@@ -354,9 +354,131 @@
       <span>I</span>
       <span>Y</span>
       <span>A</span>
-      <span>-</span>
+      <span></span>
     </div>
   </div>
 </body>
 </html>
 
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Walking Person Around Circle</title>
+<style>
+  body {
+    background: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  .circle {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    border: 3px solid #0af;
+    border-radius: 50%;
+  }
+  .person {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 40px;
+    height: 80px;
+    margin: -80px 0 0 -20px;
+    animation: walkAround 8s linear infinite;
+  }
+  /* Simple person shape */
+  .person div {
+    position: absolute;
+    background: #0af;
+    border-radius: 4px;
+  }
+  /* head */
+  .head {
+    top: 0;
+    left: 10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+  }
+  /* body */
+  .body {
+    top: 20px;
+    left: 15px;
+    width: 10px;
+    height: 40px;
+    border-radius: 5px;
+  }
+  /* arms */
+  .arm-left {
+    top: 20px;
+    left: 0;
+    width: 10px;
+    height: 20px;
+    transform-origin: top right;
+    animation: armSwing 1s ease-in-out infinite alternate;
+  }
+  .arm-right {
+    top: 20px;
+    left: 20px;
+    width: 10px;
+    height: 20px;
+    transform-origin: top left;
+    animation: armSwing 1s ease-in-out infinite alternate-reverse;
+  }
+  /* legs */
+  .leg-left {
+    top: 60px;
+    left: 5px;
+    width: 10px;
+    height: 25px;
+    transform-origin: top right;
+    animation: legSwing 1s ease-in-out infinite alternate;
+  }
+  .leg-right {
+    top: 60px;
+    left: 15px;
+    width: 10px;
+    height: 25px;
+    transform-origin: top left;
+    animation: legSwing 1s ease-in-out infinite alternate-reverse;
+  }
+
+  /* Walking animation */
+  @keyframes armSwing {
+    0% { transform: rotate(30deg); }
+    100% { transform: rotate(-30deg); }
+  }
+  @keyframes legSwing {
+    0% { transform: rotate(-30deg); }
+    100% { transform: rotate(30deg); }
+  }
+  /* Rotate person around circle */
+  @keyframes walkAround {
+    0% {
+      transform: rotate(0deg) translateX(125px) rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg) translateX(125px) rotate(-360deg);
+    }
+  }
+</style>
+</head>
+<body>
+  <div class="circle">
+    <div class="person">
+      <div class="head"></div>
+      <div class="body"></div>
+      <div class="arm-left"></div>
+      <div class="arm-right"></div>
+      <div class="leg-left"></div>
+      <div class="leg-right"></div>
+    </div>
+  </div>
+</body>
+</html>
