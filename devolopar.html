@@ -2,116 +2,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Developer Info</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(135deg, #000000, #1a1a1a);
-      color: #fff;
-      animation: bgShift 10s infinite alternate;
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Developer Profile</title>
+<style>
+  body {
+    background-color: #121212;
+    color: #eee;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 40px;
+  }
+  .container {
+    max-width: 400px;
+    margin: auto;
+    background: #222;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px #00ffff66;
+    text-align: center;
+  }
+  h1 {
+    color: #0ff;
+    margin-bottom: 5px;
+  }
+  h2 {
+    color: #d0f;
+    margin-bottom: 20px;
+  }
+  .whatsapp-btn {
+    background-color: #25D366;
+    border: none;
+    padding: 12px 25px;
+    margin: 8px 0;
+    color: white;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    text-decoration: none;
+  }
+  .whatsapp-btn:hover {
+    background-color: #128C4A;
+  }
+  .email {
+    margin: 20px 0;
+    color: #00bfff;
+    font-weight: 600;
+  }
+  .skills {
+    background-color: #333;
+    border-radius: 12px;
+    padding: 15px;
+    margin-top: 30px;
+    animation: fadeSlideIn 1.5s ease forwards;
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  .skills h3 {
+    color: #d0f;
+    margin-bottom: 12px;
+  }
+  .skills ul {
+    list-style: none;
+    padding: 0;
+    color: #ccc;
+    text-align: left;
+  }
+  .skills ul li {
+    margin: 6px 0;
+  }
+  @keyframes fadeSlideIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
     }
-
-    @keyframes bgShift {
-      0% { background: #000000; }
-      25% { background: #1a1a1a; }
-      50% { background: #111111; }
-      75% { background: #000000; }
-      100% { background: #1a1a1a; }
-    }
-
-    .container {
-      max-width: 600px;
-      margin: 60px auto;
-      background-color: rgba(255, 255, 255, 0.05);
-      padding: 30px;
-      border-radius: 15px;
-      text-align: center;
-      box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
-    }
-
-    h1 {
-      color: #00ffff;
-      font-size: 32px;
-    }
-
-    h2 {
-      color: #ff00ff;
-      margin: 5px 0 20px;
-    }
-
-    .contact-btn {
-      display: inline-block;
-      margin: 10px;
-      padding: 10px 25px;
-      background-color: #00ccff;
-      color: #000;
-      border: none;
-      border-radius: 30px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: 0.3s ease;
-    }
-
-    .contact-btn:hover {
-      background-color: #00ffcc;
-      color: #000;
-    }
-
-    .skills {
-      margin-top: 25px;
-      text-align: left;
-    }
-
-    .skills ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    .skills li::before {
-      content: '💻 ';
-    }
-
-    .gmail {
-      margin-top: 15px;
-      color: #00d9ff;
-      word-break: break-all;
-    }
-  </style>
+  }
+</style>
 </head>
 <body>
   <div class="container">
     <h1>Pasidu Sampath</h1>
     <h2>PASIYA-MD TEAM OWNER</h2>
-
-    <a class="contact-btn" href="https://wa.me/94784548818" target="_blank">WhatsApp: 0784548818</a>
-    <a class="contact-btn" href="https://wa.me/94766359869" target="_blank">WhatsApp: 0766359869</a>
-
-    <div class="gmail">📧 Email: pasidusampath730@gmail.com</div>
-
+    
+    <a href="https://wa.me/94784548818" target="_blank" class="whatsapp-btn">WhatsApp: 0784548818</a>
+    <a href="https://wa.me/94766359869" target="_blank" class="whatsapp-btn">WhatsApp: 0766359869</a>
+    
+    <p class="email">Email: <a href="mailto:pasidusampath730@gmail.com" style="color:#00bfff;">pasidusampath730@gmail.com</a></p>
+    
     <div class="skills">
-      <h3>🔧 My Skills:</h3>
+      <h3>🧰 My Skills:</h3>
       <ul>
-      opacity: 1;
-        transform: translateY(0);
-      }
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <h2>💼 My Skills</h2>
-    <div class="skill">Full-stack Developer</div>
-    <div class="skill">Software Engineering</div>
-    <div class="skill">Cyber Security Engineer</div>
-    <div class="skill">UI/UX Web Designing</div>
-    <div class="skill">WhatsApp Bot Development</div>
-  </div>
-</body>
+        <li>💻 Full-stack Developer</li>
+        <li>💻 Software Engineering</li>
+        <li>💻 Cyber Security Engineer</li>
+        <li>💻 UI/UX Web Designing</li>
+        <li>💻 WhatsApp Bot Development</li>
       </ul>
     </div>
   </div>
 </body>
 </html>
+```
+  
