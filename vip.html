@@ -1,38 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>VIP Packages | DEMONS VIP CRYPTO</title>
 
-<div class="vip-section" style="text-align: center; color: #ffffff;">
-  <h2>VIP Package</h2>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"/>
+  <style>
+    body {
+background-color: #ffffff;
+color: #000000;
+      color: white;
+      font-family: 'Poppins', sans-serif;
+    }
 
-  <div class="vip-option">
-    <h3>Monthly VIP</h3>
-    <p>10/month</p>
-    <p>Access to live signals, charts     analysis</p>
-    <a href="#" style="color: #1E90FF;">Buy Now</a>
+    h2, h3 {
+      color: gold;
+    }
+
+    .btn-buy {
+      background-color: gold;
+      color: black;
+      font-weight: 600;
+      border: none;
+      padding: 10px 25px;
+      border-radius: 30px;
+      box-shadow: 0 0 15px gold;
+      transition: 0.3s;
+    }
+
+    .btn-buy:hover {
+      background-color: #e6c200;
+      box-shadow: 0 0 25px gold;
+      transform: scale(1.05);
+    }
+
+    .card {
+      background-color: #1a1a1a;
+      border: 2px solid gold;
+      border-radius: 12px;
+      padding: 25px;
+      margin-bottom: 30px;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      box-shadow: 0 0 25px rgba(255, 215, 0, 0.4);
+      transform: translateY(-5px);
+    }
+
+    .card p {
+      margin: 8px 0;
+    }
+
+    .price {
+      color: white;
+      font-size: 1.2rem;
+      font-weight: 600;
+      text-shadow: 0 0 5px gold;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container text-center my-5">
+    <h2 class="mb-4">Choose Your VIP Package</h2>
+
+    <div class="row justify-content-center">
+      <!-- Monthly Plan -->
+      <div class="col-md-4 col-sm-6">
+        <div class="card">
+          <h3>Monthly VIP</h3>
+          <p class="price">$10/month</p>
+          <p>Access to live signals</p>
+          <p>Charts & technical analysis</p>
+          <button class="btn btn-buy mt-3" onclick="alert('Redirecting to buy Monthly VIP...')">Buy Now</button>
+        </div>
+      </div>
+
+      <!-- Lifetime Plan -->
+      <div class="col-md-4 col-sm-6">
+        <div class="card">
+          <h3>Lifetime VIP</h3>
+          <p class="price">$30 (One-time)</p>
+          <p>Unlimited lifetime access</p>
+          <p>All VIP features unlocked</p>
+          <button class="btn btn-buy mt-3" onclick="alert('Redirecting to buy Lifetime VIP...')">Buy Now</button>
+        </div>
+      </div>
+    </div>
   </div>
 
-  <div class="vip-option">
-    <h3>Lifetime VIP</h3>
-    <p>30 (One-time)</p>
-    <p>Unlimited access to all VIP features</p>
-    <a href="#" style="color: #1E90FF;">Buy Now</a>
-  </div>
-</div>
-
-
-
-<div style="color: #ffffff;">
-  <h2>VIP Package</h2>
-
-  <div>
-    <h3>Monthly VIP</h3>
-    <p>10/month</p>
-    <p>Access to live signals, charts     analysis</p>
-    <a href="#" style="color: #ffffff;">Buy Now</a>
-  </div>
-
-  <div>
-    <h3>Lifetime VIP</h3>
-    <p>30 (One-time)</p>
-    <p>Unlimited access to all VIP features</p>
-    <a href="#" style="color: #ffffff;">Buy Now</a>
-  </div>
-</div>.
+</body>
+</html>
