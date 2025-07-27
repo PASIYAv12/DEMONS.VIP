@@ -119,3 +119,162 @@
   </div>
 </body>
 </html>
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Skills Animation</title>
+<style>
+  body {
+    background: #111;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+  }
+  .skills-container {
+    width: 320px;
+  }
+  .skill-box {
+    background-color: #333;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+    animation-name: fadeSlideIn;
+    animation-delay: var(--delay);
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    color: white;
+    box-shadow: 0 0 12px rgba(0,0,0,0.4);
+  }
+
+  .skill-box:nth-child(1) {
+    --delay: 0.2s;
+    animation-name: fadeSlideIn, colorShift1;
+    animation-duration: 1s, 4s;
+    animation-iteration-count: 1, infinite;
+  }
+  .skill-box:nth-child(2) {
+    --delay: 0.4s;
+    animation-name: fadeSlideIn, colorShift2;
+    animation-duration: 1s, 4s;
+    animation-iteration-count: 1, infinite;
+    }
+  .skill-box:nth-child(3) {
+    --delay: 0.6s;
+    animation-name: fadeSlideIn, colorShift3;
+    animation-duration: 1s, 4s;
+    animation-iteration-count: 1, infinite;
+  }
+  .skill-box:nth-child(4) {
+    --delay: 0.8s;
+    animation-name: fadeSlideIn, colorShift4;
+    animation-duration: 1s, 4s;
+    animation-iteration-count: 1, infinite;
+  }
+  .skill-box:nth-child(5) {
+    --delay: 1s;
+    animation-name: fadeSlideIn, colorShift5;
+    animation-duration: 1s, 4s;
+    animation-iteration-count: 1, infinite;
+  }
+
+  @keyframes fadeSlideIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @keyframes colorShift1 {
+    0%, 100% { background-color: #e74c3c; }
+    50% { background-color: #f39c12; }
+  }
+  @keyframes colorShift2 {
+    0%, 100% { background-color: #3498db; }
+    50% { background-color: #9b59b6; }
+  }
+  @keyframes colorShift3 {
+    0%, 100% { background-color: #2ecc71; }
+    50% { background-color: #1abc9c; }
+  }
+  @keyframes colorShift4 {
+    0%, 100% { background-color: #e67e22; }
+    50% { background-color: #d35400; }
+  }
+  @keyframes colorShift5 {
+    0%, 100% { background-color: #9b59b6; }
+    50% { background-color: #8e44ad; }
+  }
+</style>
+</head>
+<body>
+  <div class="skills-container">
+    <div class="skill-box">HTML</div>
+    }
+  .skill-box:nth-child(3) {
+    --delay: 0.6s;
+    animation-name: fadeSlideIn, colorShift3;
+    animation-duration: 1s, 4s;
+    animation-iteration-count: 1, infinite;
+  }
+  .skill-box:nth-child(4) {
+    --delay: 0.8s;
+    animation-name: fadeSlideIn, colorShift4;
+    animation-duration: 1s, 4s;
+    animation-iteration-count: 1, infinite;
+  }
+  .skill-box:nth-child(5) {
+    --delay: 1s;
+    animation-name: fadeSlideIn, colorShift5;
+    animation-duration: 1s, 4s;
+    animation-iteration-count: 1, infinite;
+  }
+
+  @keyframes fadeSlideIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @keyframes colorShift1 {
+    0%, 100% { background-color: #e74c3c; }
+    50% { background-color: #f39c12; }
+  }
+  @keyframes colorShift2 {
+    0%, 100% { background-color: #3498db; }
+    50% { background-color: #9b59b6; }
+  }
+  @keyframes colorShift3 {
+    0%, 100% { background-color: #2ecc71; }
+    50% { background-color: #1abc9c; }
+  }
+  @keyframes colorShift4 {
+    0%, 100% { background-color: #e67e22; }
+    50% { background-color: #d35400; }
+  }
+  @keyframes colorShift5 {
+    0%, 100% { background-color: #9b59b6; }
+    50% { background-color: #8e44ad; }
+  }
+</style>
+</head>
+<body>
+  <div class="skills-container">
+    <div class="skill-box">HTML</div>
+    <div class="skill-box">CSS</div>
+    <div class="skill-box">JavaScript</div>
+    <div class="skill-box">React</div>
+    <div class="skill-box">Node.js</div>
+  </div>
+</body>
