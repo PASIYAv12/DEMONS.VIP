@@ -481,3 +481,59 @@
   </div>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Snake Animation</title>
+<style>
+  body {
+    background: #111;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 20px;
+  }
+  .snake {
+    position: relative;
+    width: 60px;
+    height: 100px;
+    border-radius: 50% / 100%;
+    background: linear-gradient(135deg, #ff0000, #800000);
+    box-shadow: 0 0 15px 5px #ff0000, inset 0 0 10px 3px #800000;
+  }
+  .snake::before {
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: 10px;
+    width: 10px;
+    height: 10px;
+    background: black;
+    border-radius: 50%;
+  }
+  .tongue {
+    position: absolute;
+    top: 75px;
+    left: 35px;
+    width: 10px;
+    height: 10px;
+    background: red;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    animation: tongue-flick 1s infinite;
+  }
+  @keyframes tongue-flick {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(5px); }
+  }
+</style>
+</head>
+<body>
+  <div class="snake">
+    <div class="tongue"></div>
+  </div>
+</body>
+</html>
