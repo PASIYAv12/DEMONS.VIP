@@ -224,4 +224,24 @@ footer {
 .signal-box:hover {
   transform: scale(1.05);
   background: #1a1a1a;
+}  
+.vip-auth {
+  text-align: center;
+  padding: 1rem;
+}
+
+.vip-auth button {
+  background: #00ffc6;
+  color: #000;
+  font-weight: bold;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 12px;
+  margin: 0.5rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.vip-auth button:hover {
+  background: #00c6a8;
 }
