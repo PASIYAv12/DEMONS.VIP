@@ -245,3 +245,79 @@ footer {
 .vip-auth button:hover {
   background: #00c6a8;
 }
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #0a0a0a, #1f1f1f);
+  color: #fff;
+}
+
+.main-header {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: #111;
+  border-bottom: 1px solid #333;
+}
+
+.main-header h1 {
+  font-size: 2.5rem;
+  color: #00ffc6;
+  text-shadow: 0 0 10px #00ffc6;
+}
+
+.main-header nav a {
+  margin: 0 10px;
+  color: #00ffc6;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.main-header nav a:hover {
+  color: #fff;
+  text-shadow: 0 0 5px #00ffc6;
+}
+
+.market-section {
+  padding: 2rem;
+  text-align: center;
+}
+
+.charts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #111;
+  border-top: 1px solid #333;
+  font-size: 0.9rem;
+}
+
+/* Free Signal Cards */
+.signals-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2rem;
+  gap: 1rem;
+}
+
+.signal-box {
+  background: #111;
+  border: 1px solid #00ffc6;
+  padding: 1rem;
+  border-radius: 15px;
+  width: 250px;
+  box-shadow: 0 0 10px #00ffc6aa;
+  transition: transform 0.3s ease;
+}
+
+.signal-box:hover {
+  transform: scale(1.05);
+  background: #1a1a1a;
+  }
