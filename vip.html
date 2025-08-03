@@ -174,3 +174,47 @@ color:#ffffff;
   Buy Now
 </button>
 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>VIP Signals | DEMONS VIP CRYPTO</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Firebase SDKs -->
+  <script defer src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js"></script>
+  <script defer src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth.js"></script>
+  <script defer src="https://www.gstatic.com/firebasejs/9.22.0/firebase-database.js"></script>
+  <script defer src="vip.js"></script>
+</head>
+<body class="vip-page">
+
+  <header class="main-header">
+    <h1>🔐 VIP SIGNAL ACCESS</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="free-signals.html">Free</a>
+      <a href="admin.html">Admin</a>
+    </nav>
+  </header>
+
+  <section class="vip-auth">
+    <button id="loginBtn">🔑 Login with Google</button>
+    <button id="logoutBtn" style="display:none;">🚪 Logout</button>
+    <p id="userEmail"></p>
+  </section>
+
+  <section class="signal-section">
+    <div id="vip-signal-list" class="signals-boxes">
+      <!-- VIP signals will appear here -->
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 DEMONS VIP CRYPTO | VIP Area by pasiya</p>
+  </footer>
+
+</body>
+</html>
