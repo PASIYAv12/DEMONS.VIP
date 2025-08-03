@@ -161,12 +161,6 @@ footer {
   to { opacity: 1; transform: translateY(0); }
 }
 
-
-
-
-
-
-
 .features h2,
 .package-card h3,
 .package-card p {
@@ -207,3 +201,27 @@ footer {
   margin-top: 15px;
 }
 
+
+/* Signals Page */
+.signals-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2rem;
+  gap: 1rem;
+}
+
+.signal-box {
+  background: #111;
+  border: 1px solid #00ffc6;
+  padding: 1rem;
+  border-radius: 15px;
+  width: 250px;
+  box-shadow: 0 0 10px #00ffc6aa;
+  transition: transform 0.3s ease;
+}
+
+.signal-box:hover {
+  transform: scale(1.05);
+  background: #1a1a1a;
+}
