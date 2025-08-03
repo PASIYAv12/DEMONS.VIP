@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Panel | DEMONS VIP CRYPTO</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Firebase SDK -->
+  <script defer src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js"></script>
+  <script defer src="https://www.gstatic.com/firebasejs/9.22.0/firebase-database.js"></script>
+  <script defer src="admin.js"></script>
+</head>
+<body class="admin-page">
+
+  <header class="main-header">
+    <h1>🛠️ Admin Panel</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="free-signals.html">Free Signals</a>
+      <a href="vip-signals.html">VIP</a>
+    </nav>
+  </header>
+
+  <section class="admin-form">
+    <h2>➕ Post New Free Signal</h2>
+    <form id="signal-form">
+      <input type="text" id="coin" placeholder="Coin (e.g. BTC/USDT)" required>
+      <input type="text" id="entry" placeholder="Entry Price" required>
+      <input type="text" id="sl" placeholder="Stop Loss" required>
+      <input type="text" id="tp" placeholder="Take Profit" required>
+      <input type="text" id="time" placeholder="Time (e.g. 2025-08-03 12:00)" required>
+      <button type="submit">📤 Post Signal</button>
+    </form>
+    <p id="status"></p>
+  </section>
+
+  <footer>
+    <p>© 2025 DEMONS VIP CRYPTO | Admin Access by PASIYA</p>
+  </footer>
+
+</body>
+</html>
